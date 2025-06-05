@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h1>Memory Game</h1>
+<p><a href="about.html" id="aboutLink">About the Game</a></p>
+<button id="restartBtn">Restart</button>
+
+<div id="timer">Time: 0.0s</div>
+<div id="bestTime">Best Time: --</div>
+
+<div class="grid" id="grid"></div>
+
+<script>
+  const images = [
+    "images/StephenCurry.jpg",
+    "images/LeBronJames.jpg",
+    "images/NikolaJokic.jpg",
+    "images/ShaiGilgeous-Alexander.jpg",
+    "images/GiannisAntetokounmpo.jpg",
+    "images/JaysonTatum.jpg",
+    "images/AnthonyEdwards.jpg",
+    "images/VictorWembanyama.jpg"
+  ];
+  const cards = [...images, ...images];
+
+  const grid = document.getElementById("grid");
+  const restartBtn = document.getElementById("restartBtn");
+  const timerDisplay = document.getElementById("timer");
+  const bestTimeDisplay = document.getElementById("bestTime");
+
+  let flippedCards = [];
+  let matchedCount = 0;
+
+  let timer = null;
+  let elapsedTime = 0; // in milliseconds
+  let timerStarted = false;
+
+  let bestTime = localStorage.getItem("memoryGameBestTime");
+  if (bestTime !== null) {
+    bestTimeDisplay.textContent = `Best Time: ${bestTime}s`;
+  } else {
+    bestTimeDisplay.textContent = "Best Time: --";
+  }
+
+  function shuffle(array) {
+    array.sort(() => Math.random() - 0.5); // I used AI to understand how to shuffle an array randomly.
+  }
+
+  function startTimer() {
+    timerStarted = true;
+    timer = setInterval(() => {
+      elapsedTime += 100;
+      timerDisplay.textContent = `Time: ${(elapsedTime / 1000).toFixed(1)}s`;
+    }, 100); // I used AI to learn how to update the timer every tenth of a second smoothly.
+  }
+
+  function stopTimer() {
+    clearInterval(timer); // I used AI to understand how to stop a JavaScript interval.
+    timer = null;
+    timerStarted = false;
+  }
+
+  function checkWin() {
+    if (matchedCount === cards.length / 2) {
+      stopTimer();
+      const currentTimeSeconds = (elapsedTime / 1000).toFixed(1);
+      if (bestTime === null || parseFloat(currentTimeSeconds) < parseFloat(bestTime)) {
+        bestTime = currentTimeSeconds;
+        localStorage.setItem("memoryGameBestTime", bestTime);
+        bestTimeDisplay.textContent = `Best Time: ${bestTime}s`;
+        // I used AI to figure out how to compare, update, and save best time using localStorage.
+      }
+      // No alerts on win now – this was a design decision.
+    }
+  }
+
+  function createBoard() {
+    grid.innerHTML = "";
+    shuffle(cards);
+    flippedCards = [];
+    matchedCount = 0;
+
+    stopTimer();
+    elapsedTime = 0;
+    timerDisplay.textContent = `Time: 0.0s`;
+
+    cards.forEach((image) => {
+      const card = document.createElement("div");
+      card.classList.add("card");
+      card.dataset.image = image;
+      card.innerHTML = "";
+      card.style.visibility = "visible";
+      card.classList.remove("flipped");
+      card.addEventListener("click", () => flipCard(card));
+      grid.appendChild(card);
+    });
+    // I used AI to learn how to dynamically create a card grid with event listeners.
+  }
+
+  function flipCard(card) {
+    if (flippedCards.length === 2 || card.classList.contains("flipped") || card.style.visibility === "hidden") return;
+
+    if (!timerStarted) startTimer(); // I asked AI how to start the timer only when the first card is flipped.
+
+    const img = document.createElement("img");
+    img.src = card.dataset.image;
+    img.alt = "NBA Player";
+    card.appendChild(img);
+    card.classList.add("flipped");
+    flippedCards.push(card);
+
+    if (flippedCards.length === 2) {
+      const [first, second] = flippedCards;
+
+      if (first.dataset.image === second.dataset.image) {
+        setTimeout(() => {
+          first.style.visibility = "hidden";
+          second.style.visibility = "hidden";
+          flippedCards = [];
+          matchedCount++;
+          checkWin();
+        }, 500); // I used AI to understand how to delay match confirmation so players can see the match.
+      } else {
+        setTimeout(() => {
+          first.innerHTML = "";
+          second.innerHTML = "";
+          first.classList.remove("flipped");
+          second.classList.remove("flipped");
+          flippedCards = [];
+        }, 800); // I asked AI how to flip cards back after showing them for a short time.
+      }
+    }
+  }
+
+  restartBtn.addEventListener("click", createBoard); // I used AI to understand how to restart the game on button click.
+
+  createBoard(); // I asked AI how to automatically start the game when the page loads.
+</script>
+
+</body>
+</html>
