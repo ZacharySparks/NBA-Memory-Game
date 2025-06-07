@@ -28,7 +28,7 @@ index.html:
 
 6. Creating a "Restart" button that resets the game state and restarts the board.
 
-7 Automatically initializing the game board when the page loads.
+7. Automatically initializing the game board when the page loads.
 
 style.css:
 1. Designing the card flip animation using 3D transforms, including layering with .card-inner, .card-front, and .card-back, setting backface visibility, and adding perspective for smooth flipping.
