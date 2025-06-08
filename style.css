@@ -98,3 +98,24 @@ h1 {
 #restartBtn:hover {
   background-color: #005fa3;
 }
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(3, 90px); 
+    grid-gap: 10px;
+  }
+
+  .card {
+    width: 90px;
+    height: 90px;
+  }
+
+  #timer, #bestTime {
+    font-size: 1.1em;
+  }
+
+  #restartBtn {
+    width: 90%;
+    max-width: 300px;
+  }
+}
