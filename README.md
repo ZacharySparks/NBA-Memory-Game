@@ -1,8 +1,7 @@
 # NBA-Memory-Game
 This is a 4x4 NBA-themed memory matching game where players flip over cards to find matching pairs of NBA player images. The goal is to match all the pairs as quickly as possible while tracking your best time. It’s a fun and interactive way to test your memory skills and compete against your own high score.
 
-Screenshot of Game: <img <img width="1470" alt="NBA-Memory-Game" src="https://github.com/user-attachments/assets/bada173c-09be-4a8e-8b96-9111c1e47bf0" />
- />
+Screenshot of Game: <img width="1470" alt="NBA-Memory-Game" src="https://github.com/user-attachments/assets/bada173c-09be-4a8e-8b96-9111c1e47bf0" />
 
 Hyperlink to video explanation: [![Watch the demo](<img width="1470" alt="NBA-Memory-Game" src="https://github.com/user-attachments/assets/61a61f48-eb58-4933-8cfc-2a24e3c7884e" />
 ](https://www.youtube.com/watch?v=-c9_ylH6Pi4&t=6s)
