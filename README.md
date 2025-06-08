@@ -17,8 +17,8 @@ about.html: This page provides information about the game, such as how to play, 
 AI Use:
 
 index.html:
-1. Structuring the game timer, handling localStorage for best times, and implementing the logic for flipping and matching cards.
-
+1. Understanding how to duplicate the array using [...images, ...images] for matching cards.
+   
 2. Learning how to randomly shuffle an array for card placement.
 
 3. Setting up the timer to update every 0.1 seconds using setInterval and formatting the display.
@@ -34,4 +34,4 @@ index.html:
 style.css:
 1. Designing the card flip animation using 3D transforms, including layering with .card-inner, .card-front, and .card-back, setting backface visibility, and adding perspective for smooth flipping.
 
-2. How to use a Media query to make the the website usable on a phone.
+2. Learning how to use a Media query to make the the website usable on a phone.
