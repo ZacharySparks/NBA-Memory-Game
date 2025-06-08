@@ -18,7 +18,7 @@
 <div class="grid" id="grid"></div>
 
 <script>
-  // I used AI to help build the timer logic, localStorage handling, and card flipping game logic.
+  // AI showed me how to pair images by duplicating the array with [...images, ...images].
   const images = [
     "images/StephenCurry.jpg",
     "images/LeBronJames.jpg",
@@ -43,7 +43,6 @@
   let elapsedTime = 0;
   let timerStarted = false;
 
-  //AI heped me understand how to use local Storage
   let bestTime = localStorage.getItem("memoryGameBestTime");
   if (bestTime !== null) {
     bestTimeDisplay.textContent = `Best Time: ${bestTime}s`;
