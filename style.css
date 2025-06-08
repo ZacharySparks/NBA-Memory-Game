@@ -99,6 +99,10 @@ h1 {
   background-color: #005fa3;
 }
 
+/* 
+  I used AI to help make the layout responsive on small screens. 
+  It showed me how to use a media query to resize the grid and cards. 
+*/
 @media (max-width: 600px) {
   .grid {
     grid-template-columns: repeat(3, 90px); 
