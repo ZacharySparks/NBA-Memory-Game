@@ -3,7 +3,7 @@ This is a 4x4 NBA-themed memory matching game where players flip over cards to f
 
 Screenshot of Game: <img width="1470" alt="NBA-Memory-Game" src="https://github.com/user-attachments/assets/7afe1730-0592-48ac-bfcd-7851428dad03" />
 
-Hyperlink to video explanation:
+Hyperlink to video explanation: [![Watch the demo](https://www.dropbox.com/scl/fi/92l6w4sl90rp646y03u9h/Screenshot-2025-06-07-at-8.53.26-PM.png?rlkey=6gupkop56y8rfj1px9kyg45i1&dl=0)](https://www.youtube.com/watch?v=-c9_ylH6Pi4&t=6s)
 
 index.html: This is the main page of the website where the memory game is played. It contains the game layout, including the card grid, timer, restart button, and links to other pages.
 
