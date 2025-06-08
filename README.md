@@ -33,3 +33,5 @@ index.html:
 
 style.css:
 1. Designing the card flip animation using 3D transforms, including layering with .card-inner, .card-front, and .card-back, setting backface visibility, and adding perspective for smooth flipping.
+
+2. How to use a Media 
