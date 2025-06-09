@@ -30,7 +30,7 @@ Credits/Resources
 
 AI Use (all ChatGPT):
 
-   index.html: Not used
+      index.html: Not used
 
    script.js:
    
