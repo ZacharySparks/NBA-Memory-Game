@@ -6,9 +6,9 @@ Screenshot of Game: <img width="1470" alt="NBA-Memory-Game" src="https://github.
 Hyperlink to video explanation: [![Watch the demo](<img width="1470" alt="NBA-Memory-Game" src="https://github.com/user-attachments/assets/61a61f48-eb58-4933-8cfc-2a24e3c7884e" />
 ](https://www.youtube.com/watch?v=LLoxz7hNxlg)
 
-index.html: This is the main page of the website where the memory game is played. It contains the game layout, including the card grid, timer, restart button, and links to other pages.
+index.html: This file is the main game page featuring the card grid, timer, restart button, About page link, and loading external CSS/JS.
 
-script.js:
+script.js: This file contains game logic for shuffling, flipping, matching cards, checking wins, timer, and saving best times using localStorage, with AI-assisted timer and flip setup.
 
 style.css: This file styles the entire website. It handles the appearance of the cards, the flip animations, the layout of the grid, buttons, and text styling to make the game visually appealing.
 
