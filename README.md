@@ -8,7 +8,7 @@ Hyperlink to video explanation: [![Watch the demo](<img width="1470" alt="NBA-Me
 
 index.html: This file is the main game page featuring the card grid, timer, restart button, About page link, and loading external CSS/JS.
 
-script.js: This file contains game logic for shuffling, flipping, matching cards, checking wins, timer, and saving best times using localStorage, with AI-assisted timer and flip setup.
+script.js: This file contains game logic for shuffling, flipping, matching cards, checking wins, timer, and saving best times using localStorage, with a timer and flip setup.
 
 style.css: This file styles the entire website. It handles the appearance of the cards, the flip animations, the layout of the grid, buttons, and text styling to make the game visually appealing.
 
