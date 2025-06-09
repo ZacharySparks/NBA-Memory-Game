@@ -17,6 +17,8 @@ about.html: This page provides information about the game, such as how to play, 
 AI Use (all ChatGPT):
 
 index.html:
+
+script.js:
 1. Understanding how to duplicate the array using [...images, ...images] for matching cards.
    
 2. Learning how to randomly shuffle an array for card placement.
