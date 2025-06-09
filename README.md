@@ -16,17 +16,17 @@ File structure
 
       script.js: This file contains game logic for shuffling, flipping, matching cards, checking wins, timer, and saving best times using              localStorage, with a timer and flip setup.
 
-      style.css: This file styles the entire website. It handles the appearance of the cards, the flip animations, the layout of the grid,             buttons,    and text styling to make the game visually appealing.
+      style.css: This file styles the entire website. It handles the appearance of the cards, the flip animations, the layout of the grid,             buttons, and text styling to make the game visually appealing.
 
-   images folder: This folder stores all the NBA player images used on the cards in the memory game.
+      images folder: This folder stores all the NBA player images used on the cards in the memory game.
 
-   about.html: This page provides information about the game, such as how to play, the goal of the game, and maybe some background about the NBA    theme.
+      about.html: This page provides information about the game, such as how to play, the goal of the game, and maybe some background about the        NBA theme.
 
 Credits/Resources
 
-   Einstein showed me how to put images in the image folder
+      Einstein showed me how to put images in the image folder
 
-   David showed be how to transfer all my code from VScode to Github through the terminal
+      David showed be how to transfer all my code from VScode to Github through the terminal
 
 AI Use (all ChatGPT):
 
