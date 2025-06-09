@@ -8,6 +8,8 @@ Hyperlink to video explanation: [![Watch the demo](<img width="1470" alt="NBA-Me
 
 index.html: This is the main page of the website where the memory game is played. It contains the game layout, including the card grid, timer, restart button, and links to other pages.
 
+script.js:
+
 style.css: This file styles the entire website. It handles the appearance of the cards, the flip animations, the layout of the grid, buttons, and text styling to make the game visually appealing.
 
 images folder: This folder stores all the NBA player images used on the cards in the memory game.
